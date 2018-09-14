@@ -79,7 +79,7 @@ h1{
     font-size: 4rem;
     text-align: center;
     margin: 0;
-    text-shadow: 0 0 10px #38c2ec;
+    text-shadow: var(--shadow);
 }
 
 header h3{
