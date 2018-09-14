@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lucas Schreel</title>
+</head>
+<body>
+    <!-- Showcase and nav -->
+    <header>
+        <div class="logo">
+            <h1>LUCAS SCHREEL</h1>
+        </div>
+        <h3>Classical guitarist - Electric guitarist - Bassist</h3>
+        <div id="social">
+            <a href="https://www.facebook.com/lucasschreel" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/lucasschrl/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </header>
+    <span class="open-slide" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#252529" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#252529" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#252529" stroke-width="5"/>
+            </svg>
+    </span>
+    <nav id="main-nav">
+            <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about" onclick="closeSlideMenu()">About</a></li>
+                <li><a href="#kloothommel" onclick="closeSlideMenu()">Kloothommel</a></li>
+                <li><a href="#schmeeks" onclick="closeSlideMenu()">Schmeeks</a></li>
+                <li><a href="#experiences" onclick="closeSlideMenu()">Experiences</a></li>
+            </ul>
+    </nav>
+    <section id="about">
+        <div class="boxes">
+            <h2>About</h2>
+            <img src="img/Profiel.jpg" alt="Profielfoto">
+            <p>
+                    My passion for music was born at the music academy in Lennik, where I studied with
+                    Helen Borremans and Philip Bruffaerts. The latter was one of my many excellent
+                    tutors at the Kunsthumaniora Brussel, where I continued to study music more in
+                    depth.
+            </p>
+            <p>
+                    I then went on to focus on classical guitar at the Royal Conservatory of Ghent with
+                    Yves Storms and Johan Fostier. Complemented with composition courses by Lucien
+                    Postman and Frank Nuyts. Afterwards I took my degree in Pedagogics at KISP CVO
+                    Gent.
+            </p>
+            <p>
+                    On the side, I took electric guitar/improvisation courses with Frederik Leroux, who
+                    teaches jazz guitar at the Conservatory in Antwerp.
+            </p>
+            <p>
+                    Currently I am a dedicated classical guitar teacher in Academy of Sint Agatha
+                    Berchem (Brussels) and SAMWD Sint-Niklaas.
+            </p>
+            <p>
+                    As a musician I&#39;m in to lots of different kinds of music. <br>
+                    Most of my personal projects have a experimental touch. Kloothommel is a lo-fi
+                    experimental indierock band, Schmeeks is an experimental singer-songwriter project
+                    that combines very expressive passages with noise breaks for instance. <br>
+                    Also improvisation is a key element in my music. Currently working on a new project
+                    that combines jazz orientated sounds with (noise)rock, where impro has a strong
+                    importance.
+            </p>
+            <p>
+                    Besides experiment or breaking boundaries I also enjoy musical conventions or more
+                    standard sounds. In this context I have recent experience as a pop guitarist with
+                    Amery.
+            </p>
+            <p>        
+                    I did masterclasses and Workshops with: <br>
+                    Joelle Leandre, Yannis Kyriakides, Mark Applebaum, Fabrizio Cassol, Serge
+                    Verstockt, Tom Pauwels, Jef Neve, Philip Catherine, Eric Melaerts,...
+                    As a teacher I have work experience in: SLAC Conservatorium Leuven, Academie
+                    Aalst, SAMWD Harelbeke, Academie Groot-Bijgaarden, Muziekschool Lochristi,
+                    Muziekschool Wondelgem.
+            </p>
+        </div>
+    </section>
+    <section id="kloothommel">
+        <div class="boxes">
+            <h2>Kloothommel</h2>
+            <p>
+                Lo-fi indierockband from Ghent. Sometimes catchy, sometimes lazy noisy.
+                Ramirez Timmerman (voice, guitar) Mike Capriati (guitar) Krimmen (keys, guitar) GG
+                d&#39;Amadeus (bass) JJ Foefbij (drums)
+            </p>
+            <div id="player" class="player"></div>
+        </div>
+    </section>
+    <section id="schmeeks">
+        <div class="boxes">
+            <h2>Schmeeks</h2>
+            <p>
+                Brand new singer-songwriter project. Album almost finished. More news soon! 
+            </p>
+            <p>
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/441014868%3Fsecret_token%3Ds-zebY1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </p>
+        </div>
+    </section>
+    <section id="experiences">
+        <h2>Experiences</h2>
+        <div class="cards">
+            <div class="card">
+                <h4>Bestiaal</h4>
+                <p>
+                    Jazztrio led by Sebastiaan Vekeman, who invited me to record an album past summer. More info soon!
+                </p>
+                <p>
+                    Sebastiaan Vekeman (drums) Jakob Haghebaert (guitar) Sebastiaan Gommeren (double bass) Lucas Schreel 
+                    (guitar) Eline Duerinck (cello) Joshua Delaert (double bass)
+                </p>
+            </div>
+            <div class="card">
+                    <h4>Amery</h4>
+                    <p>
+                            I have the opportunity to work occasionaly with a Belgian pop-artist called Amery. 
+                            Catchy summer tunes inspired by Michael Jackson, James Brown and Bruno Mars. A versatile job 
+                            for me with electric guitar, acoustic guitar, keyboards and Roland SPD-s. An upcoming pop god 
+                            that you should keep an eye on!
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>AHUM</h4>
+                    <p>
+                            Electric-guitar quartet <br>
+                            Hans Jacobs, Lucas Schreel, Wido Uvin , Sander Torfs (electric guitars) <br>
+                            Composed music by Philip Glass, Josquin Deprez, Karlheinz Essl, King Crimson.  
+                            4 classical educated guitarists breaking boundaries.
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>tRAINS</h4>
+                    <p>
+                        Improv music with live visuals from Bergensbanen, a film of the entire journey by rail from Bergen
+                         to Oslo in Norway.
+                    </p>
+                    <p>
+                        Ben De Greef (bari sax) / Lucas Schreel (guitars)
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>Maudite soit la guerre</h4>
+                    <p>
+                        Live filmscore with Belgian movie from 1914 'Maudite soit la guerre'.
+                    </p>
+                    <p>
+                        Pieter Lenaerts (comp/double bass) / Lucas Schreel (electric guitar/comp)
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>Mangrove duo #2</h4>
+                    <p>
+                            Live improv music with a theatre performance for children.
+                    </p>
+                    <p>
+                            Delphine Dutoit (theater/ dancer) Lot Jansen (theater/ dancer) José De Jong (coach) Benjamin Hermans (baritone sax) / Lucas Schreel (electric guitar)
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>MCulprit's Welness</h4>
+                    <p>
+                        My former contemporary jazzgroup.
+                    </p>
+                    <p>
+                        Lucas Schreel (e-guitar/compositions), Benjamin Hermans (baritone sax/ bassclarinet), Andreas Bral (piano/keyboards), Gert Malfliet (drums)
+                    </p>
+            </div>
+            <div class="card">
+                    <h4>Musicals (guitarist in orchestra)</h4>
+                    <ul>
+                        <li>
+                            Terminus: Musical Van Vlaanderen (Musicallabo) Capitole Gent
+                        </li>
+                        <li>
+                            De donder rolt: Musical Van Vlaanderen (Musicallabo) Capitole Gent 
+                        </li>
+                        <li>
+                            Footloose: NT Gent
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        
+    </section>
+    <script src="js/main.js "></script>
+</body>
+</html>
