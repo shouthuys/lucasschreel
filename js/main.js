@@ -4,7 +4,8 @@ function openSlideMenu(){
 
   function closeSlideMenu(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if(width < 600){
+    var height =(window.innerHeight > 0) ? window.innerHeight : screen.height;
+    if(width < 600 || height < 600){
       document.getElementById('main-nav').style.width = '0';
     }
   }
