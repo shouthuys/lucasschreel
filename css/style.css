@@ -147,29 +147,23 @@ header h3{
 #social{
     text-align: center;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
 
-.fa:hover {
+.social-icon {
+    height: 70px;
+    width: 70px;
+    margin: 5px 2px;
+}
+
+.social-icon:hover {
     opacity: 0.7;
 }
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+#social a{
+    align-self: center;
 }
-.fa-instagram {
-    background: #125688;
-    color: white;
-  }
 
 /* Boxes */
 .boxes{
@@ -218,6 +212,14 @@ header h3{
     list-style-type: disc;
 }
 
+/* footer */
+ footer{
+     background-color: var(--dark);
+ }
+ footer p{
+    color: var(--light);
+    text-align: center;
+ }
 @media (min-width: 600px) and (min-height: 600px){
     header{
         height: 40vh;
