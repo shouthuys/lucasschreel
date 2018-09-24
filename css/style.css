@@ -236,7 +236,8 @@ header h3{
     }
 
     #main-nav a:hover{
-        background-color: var(--light);
+        background-color: var(--accent);
+        color: var(--dark);
     }
 
     #main-nav ul{
