@@ -1,264 +1,198 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie');
+/*
+Stylesheet:
+https://colorhunt.co/palette/2763
 
-/* CSS Variables */
-:root{
-  --dark: #252529;
-  --light:#f4f4f4;
-  --accent:#5F9EA0;
-  --shadow:0 1px 5px rgba(104, 104, 104, 0.8);
-}
 
-iframe{
-    display: block;
-    text-align: center;
-}
-
-html{
-    scroll-behavior: smooth;
-}
+*/
 
 body{
-  font-family: 'PT Sans', sans-serif;
-  background-color: var(--light);
-  margin: 0;
-  color: var(--dark);
-  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2{
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 2.5rem;
-    text-align: center;
+p {
+  text-align: left;
+  margin-bottom: 10px
 }
 
-h3{
-    text-align: center;
+h1 {
+  position: relative;
+  font-size: 5rem;
+  line-height: 4rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  color: black;
+  font-weight: 900;
+}
+
+h2 {
+  position: relative;
+  font-size: 3rem;
+  line-height: 4rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: 900;
+}
+
+
+
+h3 {
+  text-align: center;
+  line-height: 3rem
 }
 
 h4{
-    font-family: 'Reenie Beanie', cursive;
-    text-align: center;
-    font-size: 2rem;
-}
-a{
-    text-decoration: none;
-    color: var(--dark);
+  font-size: 0.95rem;
+  line-height: 0.8rem;
 }
 
-.player{
-    max-width: 640px;
+h5{
+  text-align: center;
+  font-weight: bold;
+
 }
 
-img {
-    width: 100%;
+nav {
+  position: relative;
 }
 
-.btn{
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border:0;
-}
-.btn:hover{
-    color: var(--accent);
+footer{
+  text-align: center;
 }
 
-/* Header */
-header{
-   background: url("../img/header.jpeg") no-repeat center/cover; 
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.container-fluid {
+  padding: 5% 15%;
 }
 
-h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 4rem;
-    text-align: center;
-    margin: 0;
-    text-shadow: var(--shadow);
+.container{
+  border-radius: 5px;
+  padding: 5% 3%;
 }
 
-header h3{
-    margin-top: 0;
+.dark-section {
+  background-color: #000;
+  color: #FFF;
 }
 
-
-
-
-/* Main navigation */
-
-.open-slide{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+.light-section {
+  background-color: #FFF;
+  color: #000;
 }
 
-#main-nav{
-    height:100%;
-    width:0;
-    position:fixed;
-    z-index:1;
-    top:0;
-    right:0;
-    background-color: var(--dark);
-    opacity:0.9;
-    overflow-x:hidden;
-    padding-top:60px;
-    transition:0.5s;
+/* Navbar */
+
+.navbar{
+  padding: 0 0 4.5rem 0;
 }
 
-#main-nav a{
-    padding:10px 10px 10px 30px;
-    text-decoration:none;
-    font-size:22px;
-    color: var(--light);
-    display:block;
-    transition:0.3s;
+/* Title Section */
+.title {
+  position: relative;
+  background-color: #000;
+  color: #FFF;
 }
 
-#main-nav a:hover{
-    color: var(--accent);
+.title .container-fluid {
+  padding: 3% 20% 10%;
 }
 
-#main-nav ul{
-    margin:8px 0 0 0;
-    list-style:none;
+.title-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* solo section */
+.center-text{
+  text-align: center;
+}
+
+/*Basic Vinyl Style*/
+.album {
+  margin: 0 auto 10px;
+  box-shadow: 0 7px 10px #aaa;
+}
+
+.album,
+.album .cover,
+.album .vinyl,
+.album img {
+  width: 300px;
+  height: 300px;
+}
+
+.album > div,
+.album .vinyl > div{
+  position: absolute;
+}
+
+.album .cover {
+    z-index: 2;
   }
 
-#main-nav  .btn-close{
-    position:absolute;
-    top:0;
-    left:0;
-    margin:0 0 0 20px;
-    font-size:36px;
-    color: var(--light);
-  }
-#main-nav .btn-close:hover{
-    color: var(--accent);
-    cursor: pointer;
+.album .vinyl {
+  background-color: #202020;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.album .vinyl .label {
+  background-color: #000;
+  width: 40%;
+  height: 40%;
+  left: 30%;
+  top: 30%;
+}
+
+.album .vinyl .hole {
+  background-color: #FFF;
+  width: 5%;
+  height: 5%;
+  margin: 45% auto 0 auto;
+}
+
+.album .textCon {
+  margin-top: 10px;
+  color: #eee;
+  text-align: center;
+  margin: 5px 0;
 }
 
 
-#social{
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/*Vinyl Style*/
+
+.albumVinyl .round {
+  border-radius: 100%;
 }
 
-.social-icon {
-    height: 70px;
-    width: 70px;
-    margin: 5px 2px;
+.albumVinyl .vinyl {
+  transform: translate(50px, 0) rotate(-180deg);
 }
 
-.social-icon:hover {
-    opacity: 0.7;
-}
-#social a{
-    align-self: center;
-}
-
-/* Boxes */
-.boxes{
-   color: var(--dark);
-    margin: 1rem;
-}
-
-.boxes img{
-    max-width: 600px;
-    display: block;
-    margin: auto;
-}
-
-/* About */
-#about img{
-    max-width: 200px;
-    border-radius: 50%;
+.albumVinyl .vinyl:hover,
+.albumVinyl .cover:hover + .vinyl {
+  transform: translate(300px, 0) rotate(0deg);
 }
 
 /* Kloothommel */
-.boxes #player{
-    display: block;
-    margin: auto;
-}
+ .player{
+   display: block;
+   margin: auto;
 
-/* Experiences */
-
-#experiences{
-    margin: 20px;
-}
-.cards{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.card{
-    width: 100%;
-    box-shadow: var(--shadow);
-}
-
-.card p{
-    margin: 1rem;
-}
-.card ul{
-    list-style-type: disc;
-}
-
-/* footer */
- footer{
-     background-color: var(--dark);
  }
- footer p{
-    color: var(--light);
-    text-align: center;
+
+ /* Experiences */
+
+ .experiences .container{
+   padding-left: 0;
+   padding-right: 0;
  }
-@media (min-width: 600px) and (min-height: 600px){
-    header{
-        height: 40vh;
-    }
-    .boxes p{
-        margin: 1em 15% 1em 15%;
-    }
-    #main-nav{
-        height:auto;
-        width:auto;
-        opacity:1;
-        padding: 0;
-        position: static;
-    }
 
-    #main-nav a:hover{
-        background-color: var(--accent);
-        color: var(--dark);
-    }
 
-    #main-nav ul{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    #main-nav a{
-        padding: 10px;
-        font-size:22px;
-    }
 
-    #main-nav  .btn-close{
-        display: none;
-    }
-    .open-slide {
-        display:none;
-    }
-    #experiences{
-        margin: 10%;
-    }
+@media (max-width: 600px) {
+  .title-image{
+    right: -120px;
+  }
 }

@@ -1,15 +1,3 @@
-function openSlideMenu(){
-    document.getElementById('main-nav').style.width = '250px';
-  }
-
-  function closeSlideMenu(){
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    var height =(window.innerHeight > 0) ? window.innerHeight : screen.height;
-    if(width < 600 || height < 600){
-      document.getElementById('main-nav').style.width = '0';
-    }
-  }
-
   // 2. This code loads the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
 
@@ -22,7 +10,6 @@ function openSlideMenu(){
   var player;
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      width:'100%',
       videoId: 'eUYU2z4tlrQ'
     });
   }
