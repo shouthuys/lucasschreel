@@ -185,7 +185,29 @@ footer{
 
 
 @media (max-width: 600px) {
-  .title-image{
-    right: -120px;
+  .title .container-fluid{
+    padding: 3% 3% 10%;
   }
+
+  .albumVinyl .vinyl {
+    transform: none;
+  }
+
+  .albumVinyl .vinyl:hover,
+  .albumVinyl .cover:hover + .vinyl {
+    transform: none;
+  }
+
+  .title-heading{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .subtitle-heading{
+    text-align: center;
+  }
+
+  .container{
+    border-radius: 0;
+  }
+
 }
